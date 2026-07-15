@@ -35,6 +35,10 @@ yarn-error.log*
 # vercel
 .vercel
 
+# contentful
+contentful-import-error-log-*.json
+INFO.md
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts
