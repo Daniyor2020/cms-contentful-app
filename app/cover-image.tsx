@@ -11,19 +11,19 @@ export default function CoverImage({
   slug,
 }: {
   title: string;
-  url: string;
+  url?: string;
   slug?: string;
 }) {
   const image = (
     <ContentfulImage
       alt={`Cover Image for ${title}`}
       priority
-      width={2000}
-      height={1000}
+      width={200}
+      height={100}
       className={cn("shadow-small", {
         "hover:shadow-medium transition-shadow duration-200": slug,
       })}
-      src={url}
+      src={url??''}
     />
   );
 

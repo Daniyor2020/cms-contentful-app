@@ -16,6 +16,12 @@ export default function Avatar({
           height={48}
           width={48}
           src={picture.url}
+          quality={100}
+          loading="eager"
+          style={{
+            objectFit: "cover",
+            borderRadius: "50%",
+          }}
         />
       </div>
       <div className="text-xl font-bold">{name}</div>
